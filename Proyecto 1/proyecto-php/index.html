@@ -12,7 +12,7 @@
 
     <!-- cabecera -->
 
-    <header>
+    <header id="cabecera">
         <!-- logo-->
         <div id="Logo">
             <a href="index.php">
@@ -22,7 +22,7 @@
         <!-- Termina el logo-->
 
         <!-- Menu -->
-        <nav id="nav">
+        <nav id="menu">
             <ul>
                 <li>
                     <a href="index.php"></a>Inicio</li>
@@ -43,10 +43,54 @@
         <!-- Termina Menu -->
     </header>
 
+    <div id="contenedor">
+        <!-- Barra Lateral -->
+        <aside id="sidebar">
+            <div id="login" class="bloque">
+                <h3>Identificate</h3>
+                <form action="login.php" method="post">
+                    <label for="email">Email</label>
+                    <input type="text" name="email">
+                    <label for="password">Password</label>
+                    <input type="password" name="password">
+                    <input type="submit" value="entrar">
+                </form>
+            </div>
+
+            <div id="register" class="bloque">
+                <h3>Registrate</h3>
+                <form action="registro.php" method="post">
+
+                    <label for="nombre">Nombres:</label>
+                    <input type="text" name="nombre">
+
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" name="apellidos">
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email">
+
+                    <label for="password">Password:</label>
+                    <input type="password" name="password">
+
+                    <input type="submit" value="Registrar">
+                </form>
+            </div>
+        </aside>
+        <!-- Fin de Barra Lateral -->
+
+        <!-- Caja Principal -->
+        <div id="principal">
+            <h1>Ultimas entradas</h1>
+            <article class="entrada"></article>
+            <h2>Titulo de mi entrada</h2>
+            <p>Descripcion</p>
+        </div>
+        <!-- Caja Principal -->
+
+    </div>
 
 
-    <!-- Barra Lateral -->
-    <!-- Caja Principal -->
     <!-- Pie de pagina -->
 </body>
 
